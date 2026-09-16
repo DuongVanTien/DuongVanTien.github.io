@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCC Account Manager</title>
+<meta name="description" content="An internal tool that creates and manages Google Ads client accounts under a single Google Ads manager account (MCC) using the Google Ads API.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>MCC Account Manager</h1>
+  <p class="tagline">An internal administration tool for Google Ads manager accounts.</p>
+</header>
+
+<main>
+  <section>
+    <h2>What this application does</h2>
+    <p>
+      MCC Account Manager is a command-line tool used by its operator to administer
+      Google Ads client accounts that belong to a single Google Ads manager account
+      (commonly called an MCC). It replaces repetitive manual work in the Google Ads
+      web interface with a reviewable, scripted workflow.
+    </p>
+    <p>The tool performs the following operations through the Google Ads API:</p>
+    <ul>
+      <li>Read the manager account's own settings, such as its name, currency and time zone.</li>
+      <li>List the client accounts that already exist under that manager account.</li>
+      <li>Create new client accounts with a given descriptive name, currency code and time zone.</li>
+      <li>Produce a preview of every planned change before anything is submitted.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who uses it</h2>
+    <p>
+      The tool is operated by its owner only. It is not a public service, it has no
+      sign-up process, and it has no end users other than the operator. It authenticates
+      to Google using a Google Cloud service account that the operator has explicitly
+      granted access to their own Google Ads manager account.
+    </p>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <p>
+      The tool runs locally on the operator's own computer. It reads a configuration file
+      containing the path to a service account key and the customer ID of the manager
+      account, then calls the Google Ads API directly. Account definitions are supplied
+      as a CSV file. Every run defaults to a dry run that prints the planned result and
+      makes no changes; creating accounts requires an explicit confirmation flag.
+    </p>
+    <p>
+      The only Google API scope requested is
+      <code>https://www.googleapis.com/auth/adwords</code>, which is required to read and
+      manage Google Ads accounts.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Questions about this application can be sent to
+      <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <nav aria-label="Legal">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+  <p>&copy; 2026 MCC Account Manager</p>
+</footer>
+</body>
+</html>
