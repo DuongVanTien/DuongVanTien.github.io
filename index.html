@@ -1,77 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MCC Account Manager</title>
-<meta name="description" content="An internal tool that creates and manages Google Ads client accounts under a single Google Ads manager account (MCC) using the Google Ads API.">
-<link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Description" content="An internal tool that creates and manages Google Ads client accounts under a single Google Ads manager account (MCC) using the Google Ads API.">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    span.s3 {font: 13.0px Menlo; font-kerning: none}
+    span.s4 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s5 {text-decoration: underline ; font-kerning: none}
+    span.s6 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s7 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    ul.ul1 {list-style-type: disc}
+  </style>
 </head>
 <body>
-<header>
-  <h1>MCC Account Manager</h1>
-  <p class="tagline">An internal administration tool for Google Ads manager accounts.</p>
-</header>
-
-<main>
-  <section>
-    <h2>What this application does</h2>
-    <p>
-      MCC Account Manager is a command-line tool used by its operator to administer
-      Google Ads client accounts that belong to a single Google Ads manager account
-      (commonly called an MCC). It replaces repetitive manual work in the Google Ads
-      web interface with a reviewable, scripted workflow.
-    </p>
-    <p>The tool performs the following operations through the Google Ads API:</p>
-    <ul>
-      <li>Read the manager account's own settings, such as its name, currency and time zone.</li>
-      <li>List the client accounts that already exist under that manager account.</li>
-      <li>Create new client accounts with a given descriptive name, currency code and time zone.</li>
-      <li>Produce a preview of every planned change before anything is submitted.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Who uses it</h2>
-    <p>
-      The tool is operated by its owner only. It is not a public service, it has no
-      sign-up process, and it has no end users other than the operator. It authenticates
-      to Google using a Google Cloud service account that the operator has explicitly
-      granted access to their own Google Ads manager account.
-    </p>
-  </section>
-
-  <section>
-    <h2>How it works</h2>
-    <p>
-      The tool runs locally on the operator's own computer. It reads a configuration file
-      containing the path to a service account key and the customer ID of the manager
-      account, then calls the Google Ads API directly. Account definitions are supplied
-      as a CSV file. Every run defaults to a dry run that prints the planned result and
-      makes no changes; creating accounts requires an explicit confirmation flag.
-    </p>
-    <p>
-      The only Google API scope requested is
-      <code>https://www.googleapis.com/auth/adwords</code>, which is required to read and
-      manage Google Ads accounts.
-    </p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>
-      Questions about this application can be sent to
-      <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.
-    </p>
-  </section>
-</main>
-
-<footer>
-  <nav aria-label="Legal">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </nav>
-  <p>&copy; 2026 MCC Account Manager</p>
-</footer>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>MCC Account Manager</b></span></h1>
+<p class="p2"><span class="s1">An internal administration tool for Google Ads manager accounts.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>What this application does</b></span></h2>
+<p class="p2"><span class="s1">MCC Account Manager is a command-line tool used by its operator to administer Google Ads client accounts that belong to a single Google Ads manager account (commonly called an MCC). It replaces repetitive manual work in the Google Ads web interface with a reviewable, scripted workflow.</span></p>
+<p class="p2"><span class="s1">The tool performs the following operations through the Google Ads API:</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s2"></span><span class="s1">Read the manager account's own settings, such as its name, currency and time zone.</span></li>
+  <li class="li4"><span class="s2"></span><span class="s1">List the client accounts that already exist under that manager account.</span></li>
+  <li class="li4"><span class="s2"></span><span class="s1">Create new client accounts with a given descriptive name, currency code and time zone.</span></li>
+  <li class="li4"><span class="s2"></span><span class="s1">Produce a preview of every planned change before anything is submitted.</span></li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Who uses it</b></span></h2>
+<p class="p2"><span class="s1">The tool is operated by its owner only. It is not a public service, it has no sign-up process, and it has no end users other than the operator. It authenticates to Google using a Google Cloud service account that the operator has explicitly granted access to their own Google Ads manager account.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>How it works</b></span></h2>
+<p class="p2"><span class="s1">The tool runs locally on the operator's own computer. It reads a configuration file containing the path to a service account key and the customer ID of the manager account, then calls the Google Ads API directly. Account definitions are supplied as a CSV file. Every run defaults to a dry run that prints the planned result and makes no changes; creating accounts requires an explicit confirmation flag.</span></p>
+<p class="p2"><span class="s1">The only Google API scope requested is </span><span class="s3">https://www.googleapis.com/auth/adwords</span><span class="s1">, which is required to read and manage Google Ads accounts.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Contact</b></span></h2>
+<p class="p2"><span class="s1">Questions about this application can be sent to <a href="mailto:REPLACE_WITH_YOUR_EMAIL"><span class="s4">duongtien2205@gmail.com</span></a>.</span></p>
+<p class="p5"><span class="s5"><a href="file:///Users/tienduongvan/githubpage/privacy.html">Privacy Policy</a></span><span class="s6"> <a href="file:///Users/tienduongvan/githubpage/terms.html"><span class="s7">Terms of Service</span></a></span></p>
+<p class="p2"><span class="s1">© 2026 MCC Account Manager</span></p>
 </body>
 </html>
